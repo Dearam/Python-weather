@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>weather dashboard</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home.css')}}"/>
+    </head>
+    <body>
+        <div class="body">
+            <div class="container">
+                <h1>WEATHER APP</h1>
+                <p>Have any question or suggestions? Drop use a Message</p>
+                <form class="top" action="{{url_for('render_results')}}" method="post">
+                    <div class="row">
+                        <div class="column">
+                            <label>Type Place </label>
+                            <input type="text" name="zipCode"/><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label>Type your email</label>
+                            <input type="text" name="email"/><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label>Describe your issue</label>
+                            <textarea placeholder="Describe your issue in detail here" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" class="btn">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
