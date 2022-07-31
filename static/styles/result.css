@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body{
+    margin: 0;;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.weather{
+    display: flex;
+    height: 100vh;
+}
+.background{
+    display: block;
+    object-fit: cover;
+    height: 100vh;
+    width: 70vw;
+}
+.main{
+    flex: 1;
+}
+.w-deatails{
+    flex: 1;
+    background:black;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    top: 75%;
+    left: -60px;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.brand{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    color: white;
+}
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.temp{
+    font-size: 100px;
+    color: white;
+    right: 100px;
+}
+.city-time,
+.temp,
+.type-icon{
+    color: white;
+    margin: 0 1em;
+}
+.type-icon{
+    left: -100px;
+    top: 5px;
+    position: relative;
+}
+.city-time{
+    position: relative;
+    left: -100px;
+    top: -10px;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, 0.5fr); */
+  }
+  
+  .grid--reverse {
+    direction: rtl;
+  }
+  
+  .grid--reverse > * { /* Select all child elements */
+    direction: ltr;
+  }
+.d-details{
+    font-size: 40px;
+    font-weight: 200;
+}
+.box{
+    width: 300px;
+    position: relative;
+    left: -50px;
+    top: 30%;
+}
+.box h2{
+    color: #fff;
+    background: #03a8f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box ul{
+    position: relative;
+    background: #fff;
+}
+.box ul li{
+    list-style: none;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+}
+.box ul li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    border-radius: 10px;
+    background: #25bcff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
